@@ -1,0 +1,515 @@
+fileFormatVersion: 2
+guid: ac0c9e1aab871dd4594d95d5358d56b6
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: BODY
+    100002: body
+    100004: canopy
+    100006: falre2
+    100008: flare1
+    100010: flare3
+    100012: flare4
+    100014: FOOT Cent
+    100016: HEAD
+    100018: helmet
+    100020: Joint
+    100022: LEG
+    100024: Leg Center
+    100026: Light01
+    100028: Light01.target
+    100030: Light02
+    100032: Light02.target
+    100034: Light03
+    100036: luz01
+    100038: luz01.target
+    100040: luz02
+    100042: luz02.target
+    100044: PROBE
+    100046: Projecto02
+    100048: Projector
+    100050: r2 eye
+    100052: r2 head
+    100054: seat
+    100056: Sensor
+    100058: SENSOR 2
+    100060: SOLAR CELL
+    100062: tube01
+    100064: windows
+    100066: windows01
+    100068: WX Body
+    100070: WX canopy
+    100072: WX Detail
+    100074: WX DOOR 01
+    100076: WX DOOR 5
+    100078: WX engienI
+    100080: WX engienO
+    100082: WX etail I
+    100084: WX etail02
+    100086: WX gear f
+    100088: WX L g 02
+    100090: WX L g 1
+    100092: WX L g 2
+    100094: WX MOTOR
+    100096: WX nose
+    100098: WX Nozze O
+    100100: WX NozzelI
+    100102: //RootNode
+    400000: BODY
+    400002: body
+    400004: canopy
+    400006: falre2
+    400008: flare1
+    400010: flare3
+    400012: flare4
+    400014: FOOT Cent
+    400016: HEAD
+    400018: helmet
+    400020: Joint
+    400022: LEG
+    400024: Leg Center
+    400026: Light01
+    400028: Light01.target
+    400030: Light02
+    400032: Light02.target
+    400034: Light03
+    400036: luz01
+    400038: luz01.target
+    400040: luz02
+    400042: luz02.target
+    400044: PROBE
+    400046: Projecto02
+    400048: Projector
+    400050: r2 eye
+    400052: r2 head
+    400054: seat
+    400056: Sensor
+    400058: SENSOR 2
+    400060: SOLAR CELL
+    400062: tube01
+    400064: windows
+    400066: windows01
+    400068: WX Body
+    400070: WX canopy
+    400072: WX Detail
+    400074: WX DOOR 01
+    400076: WX DOOR 5
+    400078: WX engienI
+    400080: WX engienO
+    400082: WX etail I
+    400084: WX etail02
+    400086: WX gear f
+    400088: WX L g 02
+    400090: WX L g 1
+    400092: WX L g 2
+    400094: WX MOTOR
+    400096: WX nose
+    400098: WX Nozze O
+    400100: WX NozzelI
+    400102: //RootNode
+    2300000: BODY
+    2300002: body
+    2300004: canopy
+    2300006: FOOT Cent
+    2300008: HEAD
+    2300010: helmet
+    2300012: Joint
+    2300014: LEG
+    2300016: Leg Center
+    2300018: PROBE
+    2300020: Projecto02
+    2300022: Projector
+    2300024: r2 eye
+    2300026: r2 head
+    2300028: seat
+    2300030: Sensor
+    2300032: SENSOR 2
+    2300034: SOLAR CELL
+    2300036: tube01
+    2300038: windows
+    2300040: windows01
+    2300042: WX Body
+    2300044: WX canopy
+    2300046: WX Detail
+    2300048: WX DOOR 01
+    2300050: WX DOOR 5
+    2300052: WX engienI
+    2300054: WX engienO
+    2300056: WX etail I
+    2300058: WX etail02
+    2300060: WX gear f
+    2300062: WX L g 02
+    2300064: WX L g 1
+    2300066: WX L g 2
+    2300068: WX MOTOR
+    2300070: WX nose
+    2300072: WX Nozze O
+    2300074: WX NozzelI
+    3300000: BODY
+    3300002: body
+    3300004: canopy
+    3300006: FOOT Cent
+    3300008: HEAD
+    3300010: helmet
+    3300012: Joint
+    3300014: LEG
+    3300016: Leg Center
+    3300018: PROBE
+    3300020: Projecto02
+    3300022: Projector
+    3300024: r2 eye
+    3300026: r2 head
+    3300028: seat
+    3300030: Sensor
+    3300032: SENSOR 2
+    3300034: SOLAR CELL
+    3300036: tube01
+    3300038: windows
+    3300040: windows01
+    3300042: WX Body
+    3300044: WX canopy
+    3300046: WX Detail
+    3300048: WX DOOR 01
+    3300050: WX DOOR 5
+    3300052: WX engienI
+    3300054: WX engienO
+    3300056: WX etail I
+    3300058: WX etail02
+    3300060: WX gear f
+    3300062: WX L g 02
+    3300064: WX L g 1
+    3300066: WX L g 2
+    3300068: WX MOTOR
+    3300070: WX nose
+    3300072: WX Nozze O
+    3300074: WX NozzelI
+    4300000: Joint
+    4300002: Leg Center
+    4300004: Projector
+    4300006: Sensor
+    4300008: HEAD
+    4300010: PROBE
+    4300012: BODY
+    4300014: SOLAR CELL
+    4300016: LEG
+    4300018: SENSOR 2
+    4300020: Projecto02
+    4300022: tube01
+    4300024: FOOT Cent
+    4300026: WX engienO
+    4300028: WX Nozze O
+    4300030: WX etail02
+    4300032: WX canopy
+    4300034: WX L g 1
+    4300036: WX L g 2
+    4300038: WX gear f
+    4300040: WX MOTOR
+    4300042: WX Detail
+    4300044: WX L g 02
+    4300046: WX DOOR 5
+    4300048: WX DOOR 01
+    4300050: WX Body
+    4300052: WX engienI
+    4300054: WX NozzelI
+    4300056: WX etail I
+    4300058: WX nose
+    4300060: r2 eye
+    4300062: canopy
+    4300064: windows
+    4300066: windows01
+    4300068: r2 head
+    4300070: helmet
+    4300072: body
+    4300074: seat
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: A SHIP WHITE
+    second: {fileID: 2100000, guid: 00eca3e0dd6684a4ba7d6cebb2c0473f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BIB BUMP MAP
+    second: {fileID: 2100000, guid: c7a8cb2bf824840438d352bb8aab3769, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BLACK LENS
+    second: {fileID: 2100000, guid: 6d23674f2aeafbe4b9ce7ab331cce4ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BLACK THRONE
+    second: {fileID: 2100000, guid: 84e5971449a6d704bb39e8759042c374, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BLACK TUBE
+    second: {fileID: 2100000, guid: 01642888de69362448ca82f10e571714, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BLUE GLASS
+    second: {fileID: 2100000, guid: 4b9e18aa3114ab54589113eb6370a6f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BLUE PLASTIC
+    second: {fileID: 2100000, guid: 69e14c6faed52aa42b5fa67f31a78c5b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BLUE R2 D2
+    second: {fileID: 2100000, guid: 93558b444622b4d4493af7a7c778ed30, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CANOPY
+    second: {fileID: 2100000, guid: 2e9d94f00c10ca347abc79210f7c9583, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CHROME
+    second: {fileID: 2100000, guid: a6d5533c10f24624a9431493a1ede5b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Default
+    second: {fileID: 2100000, guid: 96aa8b856a22dc44991998d34f997d09, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ENGINE
+    second: {fileID: 2100000, guid: dfcc821adc3e1074693f03658ff16682, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ENGINE 2
+    second: {fileID: 2100000, guid: 2f2697581e35e7545a212b19fe9968a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EYE
+    second: {fileID: 2100000, guid: b452e7ae8b0f3da4d8eeba6f8f7e61e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GREY ALUMINUM
+    second: {fileID: 2100000, guid: 065ffb0002e0191489f9e8718636623e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GREY MATTE
+    second: {fileID: 2100000, guid: 8fe989cbcb8afcf4cb9b49c1438e32c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT ENG
+    second: {fileID: 2100000, guid: 6f1e2806673456040befdf72e5cfe5ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IRIS
+    second: {fileID: 2100000, guid: 636b41ec46d145b4f9a14e2146fb5761, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LASER
+    second: {fileID: 2100000, guid: 096d0c0598411254883392556ae01b0f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LT BLUE PLSTC
+    second: {fileID: 2100000, guid: f516f9d1a81fdd849b7db89c0710d7c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: METAL REFLEX
+    second: {fileID: 2100000, guid: 2ba2a2cf45caaa849b5a819046635285, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ORANGE
+    second: {fileID: 2100000, guid: c3c548a91a44fef4889ae7e2210a3dd2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ORANGE XWING
+    second: {fileID: 2100000, guid: 726c7fd2634258d4ebd787c0dbc8936d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PHOTON
+    second: {fileID: 2100000, guid: d2e8ca38ec7f10e4baec9f3d0c81f065, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PILOTBLACK MATTE
+    second: {fileID: 2100000, guid: 361ef1a000da12b49b1d047691a7b224, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PUPIL
+    second: {fileID: 2100000, guid: b1030fdcf996aa9408d59408f46418b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: R2 EYE
+    second: {fileID: 2100000, guid: f8a79c57117d8f945b200e1f8b412c74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: REBEL HELMET GRY
+    second: {fileID: 2100000, guid: a9d00d45fa2be2a498ae7fbf7c1bcbef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RED DECOR
+    second: {fileID: 2100000, guid: f6f4f474f410a374b8caa2990b4aa569, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RED PLSTC
+    second: {fileID: 2100000, guid: f4876fa94d48dbc4b94f8396db1c0b53, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SKIN
+    second: {fileID: 2100000, guid: fb95f120240826f44b78c7b65471cf18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VISOR
+    second: {fileID: 2100000, guid: a4ab2230b1afe894cb4a3af188a07e1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WHITE GENERAL
+    second: {fileID: 2100000, guid: 9aa68abdb93db0745b914aadec11b22c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WHITE SURFACE
+    second: {fileID: 2100000, guid: a5d8f07f164fa964bb6a96aed8272f21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WING BACK
+    second: {fileID: 2100000, guid: 42088f65400d68d4bb4c35e6ffea5f0d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WING BOTT
+    second: {fileID: 2100000, guid: bc4c6e3b02fae0d43a1343fb0a692e13, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WING FRONT
+    second: {fileID: 2100000, guid: 72a760e193bd10548ab6c17badb7bed6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WING TOP
+    second: {fileID: 2100000, guid: 7bdb39335ba6bc14091941f6a7883b11, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: XW BACK
+    second: {fileID: 2100000, guid: 0e0a2f4e650ff3749a6910e876e97574, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: XW DOWN
+    second: {fileID: 2100000, guid: 0dd3da630a06e1b41bee81b94a7c7a6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: XW SIDE
+    second: {fileID: 2100000, guid: c72895924e566174a8e407e37aefafb9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: XW TOP
+    second: {fileID: 2100000, guid: 64193d2cea109db4e92d002f771893e5, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
