@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -100,10 +101,10 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 0
-        threshold: 1.05
-        softKnee: 0.34
-        radius: 1.9
+        intensity: 0.6
+        threshold: 0.84
+        softKnee: 0
+        radius: 5
         antiFlicker: 1
       lensDirt:
         texture: {fileID: 0}
@@ -112,7 +113,7 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       tonemapping:
-        tonemapper: 2
+        tonemapper: 1
         neutralBlackIn: 0.061
         neutralWhiteIn: 10
         neutralBlackOut: -0.017
@@ -127,7 +128,7 @@ MonoBehaviour:
         saturation: 1.02
         contrast: 1.2
       channelMixer:
-        red: {x: 1.03, y: 0, z: -0.03}
+        red: {x: 1.03, y: 0, z: -0.07}
         green: {x: 0, y: 1, z: 0}
         blue: {x: 0, y: 0, z: 1}
         currentEditingChannel: 0
