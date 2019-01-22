@@ -48,6 +48,7 @@ public class TurretFire : MonoBehaviour
             float rng = Random.Range(-laserRngRange, laserRngRange);
             spawn0.SpawnLaser(rng);
             spawn1.SpawnLaser(rng);
+            Debug.Log("Fire");
             timer = 0;
             spawnRNGTime = Random.Range(.5f, spawnRNGTimeRange);
         }
