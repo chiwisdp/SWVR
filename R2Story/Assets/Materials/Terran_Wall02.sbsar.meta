@@ -158,12 +158,12 @@ ScriptedImporter:
     generateMipMaps: 1
     preset: " <sbspreset pkgurl=\"pkg://Terran_Wall01\" label=\"\" >\n  <presetinput
       identifier=\"$outputsize\" uid=\"4005880797\" type=\"8\" value=\"10,10\" />\n
-      \ <presetinput identifier=\"metal1Color\" uid=\"2551389917\" type=\"3\" value=\"0.820755,0.816883,0.816883,1\"
+      \ <presetinput identifier=\"metal1Color\" uid=\"2551389917\" type=\"3\" value=\"0.518868,0.518868,0.518868,1\"
       />\n  <presetinput identifier=\"metal2Color\" uid=\"2551389903\" type=\"3\"
-      value=\"0.660377,0.660377,0.660377,1\" />\n  <presetinput identifier=\"normalIntensity\"
-      uid=\"2551297260\" type=\"0\" value=\"19.2\" />\n  <presetinput identifier=\"roughness\"
-      uid=\"2551297024\" type=\"0\" value=\"0.26\" />\n  <presetinput identifier=\"roughSharpness\"
-      uid=\"2551215630\" type=\"0\" value=\"0.49\" />\n  <presetinput identifier=\"scratches_amount\"
+      value=\"0.509434,0.509434,0.509434,1\" />\n  <presetinput identifier=\"normalIntensity\"
+      uid=\"2551297260\" type=\"0\" value=\"22.9\" />\n  <presetinput identifier=\"roughness\"
+      uid=\"2551297024\" type=\"0\" value=\"0.6\" />\n  <presetinput identifier=\"roughSharpness\"
+      uid=\"2551215630\" type=\"0\" value=\"0\" />\n  <presetinput identifier=\"scratches_amount\"
       uid=\"2551389293\" type=\"4\" value=\"630\" />\n  <presetinput identifier=\"scratches_scale\"
       uid=\"2551389327\" type=\"0\" value=\"0\" />\n  <presetinput identifier=\"Tarnish_opacity\"
       uid=\"2551389572\" type=\"0\" value=\"0.21\" />\n  <presetinput identifier=\"tarnishHue\"

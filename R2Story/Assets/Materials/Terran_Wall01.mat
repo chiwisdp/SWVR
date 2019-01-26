@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Terran_Wall01
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 659dfd41c9b8f404390306092e32514c, type: 3}
   m_ShaderKeywords: _EMISSION _EMISSIONMAP _MAINTEX _METALLICGLOSSMAP _NORMALMAP _OCCLUSIONMAP
     _PARALLAXMAP
   m_LightmapFlags: 1
@@ -76,3 +76,5 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 1.9766746, g: 1.9766746, b: 1.9766746, a: 1}
+    - _V_CW_DetailTex_Scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _V_CW_MainTex_Scroll: {r: 0, g: 0, b: 0, a: 0}

@@ -8485,7 +8485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1646445003727110, guid: 3d5cfc5c9e0ac784981e894194c0d33f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4871919038530764, guid: 3d5cfc5c9e0ac784981e894194c0d33f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9529,8 +9529,12 @@ MonoBehaviour:
   - {fileID: 1121798416409404, guid: b507dbdaf27ba5a44acdd1140cf2c72d, type: 3}
   - {fileID: 149138, guid: f8f6c4c3f589abb4398052b957daab85, type: 3}
   - {fileID: 1428774751698870, guid: 1f0549a9ae540d14cb6c6b0926fc62a0, type: 3}
-  cars: []
+  endWall: {fileID: 9075558332128550453, guid: f26552ff17aef87488fed0183789390b, type: 3}
+  totalPlayTime: 5
+  cars:
+  - {fileID: 1646445003727110, guid: 3d5cfc5c9e0ac784981e894194c0d33f, type: 3}
   zChunkOffset: 0
+  _startController: {fileID: 0}
 --- !u!4 &1439108164
 Transform:
   m_ObjectHideFlags: 0
