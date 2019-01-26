@@ -88,19 +88,26 @@ namespace VacuumShaders
       {
         if (_startController._hasGameStarted)
         {
-          currentPlaytime += Time.deltaTime;
-          Debug.Log("current Playtime : " + currentPlaytime);
+          totalPlayTime -= Time.fixedDeltaTime;
 
         }
-        if (currentPlaytime >= totalPlayTime)
+        if (totalPlayTime <= 10)
         {
           if (!hasSpawnedWall)
           {
             SpawnEndWall(endWall.GetComponent<Runner_Chunk>());
-            Time.timeScale = .3f;
+            //Time.timeScale = .3f;
             canSpawn = false;
-            speed = 100;
+            //speed = 100;
           }
+          currentPlaytime += Time.deltaTime;
+        }
+
+        if (hasSpawnedWall && currentPlaytime >= 4f)
+        {
+          Time.timeScale = .3f;
+          speed = 100;
+          _startController.FadeInBlackOverlay();
         }
       }
       void SpawnEndWall(Runner_Chunk moveElement)
