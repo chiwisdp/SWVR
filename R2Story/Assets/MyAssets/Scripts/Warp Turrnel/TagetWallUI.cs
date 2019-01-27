@@ -16,7 +16,7 @@ public class TagetWallUI : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-    timer += Time.deltaTime * .000001f;
+    timer += Time.deltaTime * .000005f;
     // Widen the object by 0.1
     transform.localScale += new Vector3(timer, timer, timer);
     if (transform.localScale.x >= maxSize)
