@@ -36,6 +36,7 @@ namespace VacuumShaders
       public WarpTunnel _startController;
       private bool canSpawn;
       private bool hasSpawnedWall;
+      private TargetCompUIController targetCompUIController;
       //////////////////////////////////////////////////////////////////////////////
       //                                                                          //
       //Unity Functions                                                           //
@@ -46,7 +47,7 @@ namespace VacuumShaders
         get = this;
         canSpawn = true;
         _startController = GameObject.Find("WarpTunnel").GetComponent<WarpTunnel>();
-
+        targetCompUIController = GameObject.Find("TargetCompUI").GetComponent<TargetCompUIController>();
         zChunkOffset = chunks.Length / 2;
         //Instantiate chunks
         for (int i = 0; i < chunks.Length; i++)
@@ -63,6 +64,7 @@ namespace VacuumShaders
         {
           Instantiate(cars[i]);
         }
+        targetCompUIController.gameObject.SetActive(false);
       }
 
       // Use this for initialization
@@ -108,6 +110,7 @@ namespace VacuumShaders
           Time.timeScale = .3f;
           speed = 100;
           _startController.FadeInBlackOverlay();
+          targetCompUIController.SetIsAtTargetArea();
         }
       }
       void SpawnEndWall(Runner_Chunk moveElement)

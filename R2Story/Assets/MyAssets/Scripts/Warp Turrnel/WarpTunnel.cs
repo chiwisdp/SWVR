@@ -23,8 +23,10 @@ public class WarpTunnel : MonoBehaviour
   SpriteRenderer whiteOverlay;
   public bool _hasGameStarted = false;
   private bool hasCalledFadeBlack;
+  private GameObject targetingUI;
   void Awake()
   {
+    targetingUI = GameObject.Find("TargetCompUI");
     tunnelMat = this.GetComponent<Renderer>().material;
     audio = this.GetComponent<AudioSource>();
     whiteOverlay = GameObject.Find("WhiteOverlay").GetComponent<SpriteRenderer>();
@@ -42,33 +44,24 @@ public class WarpTunnel : MonoBehaviour
   {
     if (Input.GetKeyDown(KeyCode.Space) && !_hasGameStarted)
     {
-      // StartCoroutine("LightAnimation");
       StartCoroutine("FadeOutTunnel");
       StartCoroutine(FadeWhiteOverlay());
     }
-
-
   }
   IEnumerator FadeWhiteOverlay()
   {
-    // fade from opaque to transparent
     yield return new WaitForSeconds(.3f);
-    // loop over 1 second
     for (float i = 0; i <= 1; i += (Time.deltaTime * 1f))
     {
-      // set color with i as alpha
       whiteOverlay.color = new Color(1, 1, 1, i);
       mainLight.color = Color.Lerp(warpColor, normalColor, i);
       yield return null;
-      //Debug.Log("Fade in");
     }
+    targetingUI.SetActive(true);
     for (float i = 1; i >= 0; i -= (Time.deltaTime * 2f))
     {
-      // set color with i as alpha
       whiteOverlay.color = new Color(1, 1, 1, i);
-      //mainLight.color = Color.Lerp(warpColor, normalColor, i);
       yield return null;
-      //Debug.Log("Fade out");
     }
   }
 
@@ -142,6 +135,5 @@ public class WarpTunnel : MonoBehaviour
       audio.volume = 2;
       audio.Play();
     }
-
   }
 }
