@@ -5,7 +5,7 @@ using UnityEngine;
 public class TagetWallUI : MonoBehaviour
 {
   // Start is called before the first frame update
-  float maxSize = 0.0001087753f;
+  float maxSize = 0.00011f;
   float currentSize;
   float timer;
   void Start()
