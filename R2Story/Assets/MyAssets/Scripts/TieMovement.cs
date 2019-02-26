@@ -22,11 +22,21 @@ public class TieMovement : MonoBehaviour
   public float xScale = 1;
   public float yScale = 1;
   private bool hasReachedDestination = false;
+  public LaserSpawner spawn0;
+  public LaserSpawner spawn1;
+  private float bobTimer;
+  GameObject target;
+  public float spawnRNGTimeRange;
+  float spawnRNGTime;
+  float shootTimer;
+  public float laserRngRange;
   void Start()
   {
     randomizedZOffset = Random.RandomRange(offsetZRange.x, offsetZRange.y);
     offset = new Vector3(offset.x, offset.y, randomizedZOffset);
-    startPos = transform.position;
+    target = GameObject.Find("X-Fighter");
+    spawnRNGTime = Random.Range(.5f, spawnRNGTimeRange);
+    //startPos = transform.position;
   }
   void FixedUpdate()
   {
@@ -37,6 +47,11 @@ public class TieMovement : MonoBehaviour
     }
     else
     {
+      shootTimer += Time.deltaTime;
+      if (shootTimer > spawnRNGTime)
+      {
+        SpawnLaser();
+      }
       Bobbing();
     }
   }
@@ -52,14 +67,27 @@ public class TieMovement : MonoBehaviour
     startPos = desiredPos;
     Vector3 smoothedPos = Vector3.Lerp(transform.position, desiredPos, movementSpeed / 20f);
     transform.position = smoothedPos;
-    if (transform.position.z <= randomizedZOffset)
+    if ((transform.position.z <= randomizedZOffset))
     {
       hasReachedDestination = true;
+      startPos = desiredPos;
     }
+    Debug.Log("MoveToPlayer");
   }
 
   void Bobbing()
   {
-    transform.position = startPos + (Vector3.right * Mathf.Sin(Time.timeSinceLevelLoad / 2 * speed) * xScale - Vector3.up * Mathf.Sin(Time.timeSinceLevelLoad * speed) * yScale);
+    bobTimer += Time.deltaTime;
+    transform.position = startPos + (Vector3.right * Mathf.Sin(bobTimer / 2 * speed) * xScale - Vector3.up * Mathf.Sin(bobTimer * speed) * yScale);
+    Debug.Log("Bobbing");
+
+  }
+  void SpawnLaser()
+  {
+    float rng = Random.Range(-laserRngRange, laserRngRange);
+    spawn0.SpawnLaser(rng);
+    spawn1.SpawnLaser(rng);
+    shootTimer = 0;
+    spawnRNGTime = Random.Range(.5f, spawnRNGTimeRange);
   }
 }
