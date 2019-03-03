@@ -94,7 +94,7 @@ public class LaserSpawner : MonoBehaviour
         //GameObject spawnedLaser =  Instantiate(bg_laser_obj[rng_laser_fire], transform.position + (target.transform.position - transform.position).normalized,
         //	Quaternion.LookRotation(target.transform.position - transform.position));
         //spawnedLaser.GetComponent<LaserBullet> ().AddYVelocity (10000f);
-        //Debug.Log (this.name+" :"+target.name);
+        // Debug.Log(this.name + " :" + target.name);
         rng_fire_rate = Random.Range(spawnRate.x, spawnRate.y);
         timer = 0;
         break;
@@ -104,6 +104,7 @@ public class LaserSpawner : MonoBehaviour
 
   public void SpawnLaser(float randomLaserOffset)
   {
+    //Debug.Log("SPAWN LASER");
     randomSpawnOffset = randomLaserOffset;
     for (int i = 0; i < bullets.Count; i++)
     {
@@ -113,10 +114,11 @@ public class LaserSpawner : MonoBehaviour
         bullets[i].transform.position = transform.position + (target.transform.position - transform.position).normalized;
         bullets[i].transform.rotation = Quaternion.LookRotation(offsetTargetPos - transform.position);
         bullets[i].SetActive(true);
+        bullets[i].name = "TIE" + i.ToString();
         //GameObject spawnedLaser =  Instantiate(bg_laser_obj[rng_laser_fire], transform.position + (target.transform.position - transform.position).normalized,
         //	Quaternion.LookRotation(target.transform.position - transform.position));
         //spawnedLaser.GetComponent<LaserBullet> ().AddYVelocity (10000f);
-        //Debug.Log (this.name+" :"+target.name);
+        //Debug.Log(this.name + " :" + target.name + " bullet name : " + bullets[i].name + bullets[i].transform.position + bullets[i].activeSelf);
         if (isTurret)
         {
           if (this.gameObject.GetComponent<AudioSource>().isPlaying)

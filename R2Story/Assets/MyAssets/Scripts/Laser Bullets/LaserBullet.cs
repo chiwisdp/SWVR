@@ -7,6 +7,7 @@ public class LaserBullet : MonoBehaviour
 
   float bulletForce = 350;
   float yVelOffset = 0;
+  public bool isTieLAser = false;
   public void AddYVelocity(float yOffset)
   {
     yVelOffset = yOffset;
@@ -16,11 +17,16 @@ public class LaserBullet : MonoBehaviour
 
   void OnEnable()
   {
+    if (isTieLAser)
+    {
+      bulletForce = 10f;
+    }
     Invoke("Kill", 7f);
   }
   void Update()
   {
     transform.Translate(Vector3.forward * bulletForce * Time.deltaTime);
+    Debug.Log("LASER MOVE");
   }
   void Kill()
   {
@@ -29,7 +35,11 @@ public class LaserBullet : MonoBehaviour
   }
   void OnCollisionEnter(Collision collision)
   {
-    Kill();
+    if (collision.gameObject.name == "x-wing")
+    {
+      Kill();
+      Debug.Log(collision.gameObject.name);
+    }
   }
 
   void OnDisable()

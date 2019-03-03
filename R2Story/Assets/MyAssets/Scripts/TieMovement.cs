@@ -65,9 +65,9 @@ public class TieMovement : MonoBehaviour
   {
     Vector3 desiredPos = Player.transform.position + offset;
     startPos = desiredPos;
-    Vector3 smoothedPos = Vector3.Lerp(transform.position, desiredPos, movementSpeed / 20f);
+    Vector3 smoothedPos = Vector3.Lerp(transform.position, desiredPos, movementSpeed / 10f);
     transform.position = smoothedPos;
-    if ((transform.position.z <= randomizedZOffset))
+    if ((transform.position.z >= randomizedZOffset))
     {
       hasReachedDestination = true;
       startPos = desiredPos;
