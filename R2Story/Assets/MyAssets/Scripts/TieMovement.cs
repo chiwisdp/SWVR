@@ -8,7 +8,7 @@ public class TieMovement : MonoBehaviour
   public GameObject Player;
   public float movementSpeed = .0125f;
 
-  Vector2 offsetZRange = new Vector2(-25f, -85f);
+  Vector2 offsetZRange = new Vector2(-35f, -130f);
   float randomizedZOffset = 0f;
   Vector3 offset;
   Vector3 lookPos;
@@ -30,8 +30,12 @@ public class TieMovement : MonoBehaviour
   float spawnRNGTime;
   float shootTimer;
   public float laserRngRange;
+  float wiggleRoom;
+  WarpTunnel _startController;
+
   void Start()
   {
+    _startController = GameObject.Find("WarpTunnel").GetComponent<WarpTunnel>();
     randomizedZOffset = Random.RandomRange(offsetZRange.x, offsetZRange.y);
     offset = new Vector3(offset.x, offset.y, randomizedZOffset);
     target = GameObject.Find("X-Fighter");
@@ -41,18 +45,21 @@ public class TieMovement : MonoBehaviour
   void FixedUpdate()
   {
     LookAtPlayer();
-    if (!hasReachedDestination)
+    if (_startController._hasGameStarted)
     {
-      MoveToPlayer();
-    }
-    else
-    {
-      shootTimer += Time.deltaTime;
-      if (shootTimer > spawnRNGTime)
+      if (!hasReachedDestination)
       {
-        SpawnLaser();
+        MoveToPlayer();
       }
-      Bobbing();
+      else
+      {
+        shootTimer += Time.deltaTime;
+        if (shootTimer > spawnRNGTime)
+        {
+          SpawnLaser();
+        }
+        BobbingAtDesiredPos();
+      }
     }
   }
   void LookAtPlayer()
@@ -64,23 +71,34 @@ public class TieMovement : MonoBehaviour
   void MoveToPlayer()
   {
     Vector3 desiredPos = Player.transform.position + offset;
+    wiggleRoom = desiredPos.z - 5f;
     startPos = desiredPos;
     Vector3 smoothedPos = Vector3.Lerp(transform.position, desiredPos, movementSpeed / 10f);
     transform.position = smoothedPos;
-    if ((transform.position.z >= randomizedZOffset))
+    BobbingBeforeDesiredPos();
+    if (transform.position.z >= wiggleRoom)
     {
       hasReachedDestination = true;
-      startPos = desiredPos;
+      startPos = transform.position;
+      bobTimer = 0f;
     }
-    Debug.Log("MoveToPlayer");
+
+  }
+  void BobbingBeforeDesiredPos()
+  {
+    if (transform.position.z <= (wiggleRoom * 2f))
+    {
+      bobTimer += Time.deltaTime;
+      Vector3 bobPos = transform.position + (Vector3.right * Mathf.Sin(bobTimer / 2 * speed) * (xScale / 20f));
+      transform.position = new Vector3(bobPos.x, transform.position.y, transform.position.z);
+    }
   }
 
-  void Bobbing()
+  void BobbingAtDesiredPos()
   {
     bobTimer += Time.deltaTime;
+    //Vector3 bobPos =startPos + (Vector3.right * Mathf.Sin(bobTimer / 2 * speed) * xScale - Vector3.up * Mathf.Sin(bobTimer * speed) * yScale);
     transform.position = startPos + (Vector3.right * Mathf.Sin(bobTimer / 2 * speed) * xScale - Vector3.up * Mathf.Sin(bobTimer * speed) * yScale);
-    Debug.Log("Bobbing");
-
   }
   void SpawnLaser()
   {
