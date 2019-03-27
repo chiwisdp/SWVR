@@ -23,7 +23,6 @@ public class TieMovement : MonoBehaviour
   public float yScale = 1;
   private bool hasReachedDestination = false;
   public LaserSpawner spawn0;
-  public LaserSpawner spawn1;
   private float bobTimer;
   GameObject target;
   public float spawnRNGTimeRange;
@@ -64,13 +63,13 @@ public class TieMovement : MonoBehaviour
   }
   void LookAtPlayer()
   {
-    lookPos = Player.transform.position - transform.position;
+    lookPos = target.transform.position - transform.position;
     rotation = Quaternion.LookRotation(lookPos);
     transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * damping);
   }
   void MoveToPlayer()
   {
-    Vector3 desiredPos = Player.transform.position + offset;
+    Vector3 desiredPos = target.transform.position + offset;
     wiggleRoom = desiredPos.z - 5f;
     startPos = desiredPos;
     Vector3 smoothedPos = Vector3.Lerp(transform.position, desiredPos, movementSpeed / 10f);
@@ -103,8 +102,7 @@ public class TieMovement : MonoBehaviour
   void SpawnLaser()
   {
     float rng = Random.Range(-laserRngRange, laserRngRange);
-    spawn0.SpawnLaser(rng);
-    spawn1.SpawnLaser(rng);
+    spawn0.SpawnLaserTie(rng);
     shootTimer = 0;
     spawnRNGTime = Random.Range(.5f, spawnRNGTimeRange);
   }

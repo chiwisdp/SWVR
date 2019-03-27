@@ -134,4 +134,37 @@ public class LaserSpawner : MonoBehaviour
       }
     }
   }
+  public void SpawnLaserTie(float randomLaserOffset)
+  {
+    //Debug.Log("SPAWN LASER");
+    randomSpawnOffset = randomLaserOffset;
+    for (int i = 0; i < bullets.Count; i++)
+    {
+      if (!bullets[i].activeInHierarchy)
+      {
+        Vector3 offsetTargetPos = new Vector3(target.transform.position.x * randomSpawnOffset, target.transform.position.y * randomSpawnOffset, target.transform.position.z * 1f);
+        bullets[i].transform.position = transform.position + (target.transform.position - transform.position).normalized;
+        bullets[i].transform.rotation = Quaternion.LookRotation(offsetTargetPos - transform.position);
+        bullets[i].SetActive(true);
+        bullets[i].name = "TIE" + i.ToString();
+        bullets[i].GetComponent<TieBullet>().SetTarget(target);
+        //GameObject spawnedLaser =  Instantiate(bg_laser_obj[rng_laser_fire], transform.position + (target.transform.position - transform.position).normalized,
+        //	Quaternion.LookRotation(target.transform.position - transform.position));
+        //spawnedLaser.GetComponent<LaserBullet> ().AddYVelocity (10000f);
+        //Debug.Log(this.name + " :" + target.name + " bullet name : " + bullets[i].name + bullets[i].transform.position + bullets[i].activeSelf);
+        if (isTurret)
+        {
+          if (this.gameObject.GetComponent<AudioSource>().isPlaying)
+          {
+            this.gameObject.GetComponent<AudioSource>().Stop();
+          }
+          this.gameObject.GetComponent<AudioSource>().Play();
+          muzzleFlash.Play();
+        }
+        timer = 0;
+        rng_fire_rate = Random.Range(spawnRate.x, spawnRate.y);
+        break;
+      }
+    }
+  }
 }

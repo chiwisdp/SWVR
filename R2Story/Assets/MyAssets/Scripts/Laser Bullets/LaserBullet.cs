@@ -7,7 +7,7 @@ public class LaserBullet : MonoBehaviour
 
   float bulletForce = 350;
   float yVelOffset = 0;
-  public bool isTieLAser = false;
+  public bool isTieLaser = false;
   public void AddYVelocity(float yOffset)
   {
     yVelOffset = yOffset;
@@ -17,16 +17,16 @@ public class LaserBullet : MonoBehaviour
 
   void OnEnable()
   {
-    if (isTieLAser)
+    if (isTieLaser)
     {
-      bulletForce = 10f;
+      bulletForce = 1f; //10
     }
     Invoke("Kill", 7f);
   }
   void Update()
   {
     transform.Translate(Vector3.forward * bulletForce * Time.deltaTime);
-    Debug.Log("LASER MOVE");
+    Debug.Log(this.name + " : " + GetComponent<Rigidbody>().velocity);
   }
   void Kill()
   {
@@ -42,8 +42,9 @@ public class LaserBullet : MonoBehaviour
     }
   }
 
-  void OnDisable()
+  void OnBecameInvisible()
   {
-    CancelInvoke();
+    Kill();
+    Debug.Log(this.name + " Became invisible");
   }
 }
