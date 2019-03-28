@@ -147,7 +147,7 @@ public class LaserSpawner : MonoBehaviour
         bullets[i].transform.rotation = Quaternion.LookRotation(offsetTargetPos - transform.position);
         bullets[i].SetActive(true);
         bullets[i].name = "TIE" + i.ToString();
-        bullets[i].GetComponent<TieBullet>().SetTarget(target);
+        //bullets[i].GetComponent<TieBullet>().SetTarget(target);
         //GameObject spawnedLaser =  Instantiate(bg_laser_obj[rng_laser_fire], transform.position + (target.transform.position - transform.position).normalized,
         //	Quaternion.LookRotation(target.transform.position - transform.position));
         //spawnedLaser.GetComponent<LaserBullet> ().AddYVelocity (10000f);
