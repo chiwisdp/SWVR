@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using FXV;
 public class LaserSpawner : MonoBehaviour
 {
   public GameObject target;
@@ -11,6 +11,7 @@ public class LaserSpawner : MonoBehaviour
   public GameObject[] bg_laser_obj;
   float timer = 0f;
   float randomSpawnOffset;
+  public bool isTieFighter;
   public bool isTurret = false;
   public bool isBGSpawner = false;
   public bool isFiringAtPlayer = false;
@@ -23,33 +24,38 @@ public class LaserSpawner : MonoBehaviour
   public int poolAmount = 2;
   WarpTunnel _startController;
   List<GameObject> bullets;
+
+  public FXVShooter shooter;
+
   // Use this for initialization
   void Awake()
   {
     _startController = GameObject.Find("WarpTunnel").GetComponent<WarpTunnel>();
     bullets = new List<GameObject>();
-    for (int i = 0; i < poolAmount; i++)
+    if (!isTieFighter)
     {
-      GameObject newBullet;
-      if (i % 2 == 1)
+      for (int i = 0; i < poolAmount; i++)
       {
-        newBullet = Instantiate(bg_laser_obj[0]);
-      }
-      else
-      {
-        if (!isTurret)
-        {
-          newBullet = Instantiate(bg_laser_obj[1]);
-        }
-        else
+        GameObject newBullet;
+        if (i % 2 == 1)
         {
           newBullet = Instantiate(bg_laser_obj[0]);
         }
+        else
+        {
+          if (!isTurret)
+          {
+            newBullet = Instantiate(bg_laser_obj[1]);
+          }
+          else
+          {
+            newBullet = Instantiate(bg_laser_obj[0]);
+          }
+        }
+        newBullet.SetActive(false);
+        bullets.Add(newBullet);
       }
-      newBullet.SetActive(false);
-      bullets.Add(newBullet);
     }
-
     if (!isBGSpawner)
     {
       target = GameObject.Find("X-Fighter");
@@ -114,7 +120,7 @@ public class LaserSpawner : MonoBehaviour
         bullets[i].transform.position = transform.position + (target.transform.position - transform.position).normalized;
         bullets[i].transform.rotation = Quaternion.LookRotation(offsetTargetPos - transform.position);
         bullets[i].SetActive(true);
-        bullets[i].name = "TIE" + i.ToString();
+        bullets[i].name = "turret" + i.ToString();
         //GameObject spawnedLaser =  Instantiate(bg_laser_obj[rng_laser_fire], transform.position + (target.transform.position - transform.position).normalized,
         //	Quaternion.LookRotation(target.transform.position - transform.position));
         //spawnedLaser.GetComponent<LaserBullet> ().AddYVelocity (10000f);
@@ -136,8 +142,18 @@ public class LaserSpawner : MonoBehaviour
   }
   public void SpawnLaserTie(float randomLaserOffset)
   {
+
+    shooter.Shoot(target.transform.position);
+
+    if (this.gameObject.GetComponent<AudioSource>().isPlaying)
+    {
+      this.gameObject.GetComponent<AudioSource>().Stop();
+    }
+    this.gameObject.GetComponent<AudioSource>().Play();
+    muzzleFlash.Play();
+
     //Debug.Log("SPAWN LASER");
-    randomSpawnOffset = randomLaserOffset;
+    /* randomSpawnOffset = randomLaserOffset;
     for (int i = 0; i < bullets.Count; i++)
     {
       if (!bullets[i].activeInHierarchy)
@@ -165,6 +181,6 @@ public class LaserSpawner : MonoBehaviour
         rng_fire_rate = Random.Range(spawnRate.x, spawnRate.y);
         break;
       }
-    }
+    } */
   }
 }

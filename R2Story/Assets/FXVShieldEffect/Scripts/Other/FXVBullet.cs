@@ -35,7 +35,10 @@ namespace FXV
 
       currentTime += Time.deltaTime;
 
-      transform.position = newPos;
+      //transform.position = newPos;
+      float step = speed * Time.deltaTime;
+      transform.position = Vector3.MoveTowards(this.transform.position,
+        moveDir, step);
 
       bool needDestroy = false;
 
@@ -63,7 +66,6 @@ namespace FXV
           }
         }
       }
-
       if (needDestroy)
       {
         DestroyObject(gameObject);
@@ -74,8 +76,9 @@ namespace FXV
     {
       moveDir = dir;
       currentTime = 0.0f;
-
+      Debug.Log("Bullet: " + dir);
       ray = new Ray(transform.position, moveDir);
+
     }
   }
 
