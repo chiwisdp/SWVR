@@ -15,10 +15,13 @@ namespace FXV
     public GameObject hitParticles;
 
     private Vector3 moveDir = Vector3.zero;
+    private Vector3 postMoveDir = Vector3.zero;
     private Ray ray;
 
     private float currentTime = 0.0f;
-
+    private Vector2 rngOffset;
+    private float rngXRange = 6f;
+    private float rngYRange = 6f;
     void Start()
     {
 
@@ -36,9 +39,19 @@ namespace FXV
       currentTime += Time.deltaTime;
 
       //transform.position = newPos;
+      float dist = Vector3.Distance(moveDir, transform.position);
       float step = speed * Time.deltaTime;
-      transform.position = Vector3.MoveTowards(this.transform.position,
+      Debug.Log(dist + "  this: " + transform.position.z + "  MOVE: " + moveDir.z);
+      if ((dist > 5) && (transform.position.z <= moveDir.z))
+      {
+        transform.position = Vector3.MoveTowards(this.transform.position,
         moveDir, step);
+      }
+      else
+      {
+        transform.position = Vector3.MoveTowards(this.transform.position,
+        postMoveDir, step);
+      }
 
       bool needDestroy = false;
 
@@ -74,9 +87,10 @@ namespace FXV
 
     public void Shoot(Vector3 dir)
     {
-      moveDir = dir;
       currentTime = 0.0f;
-      Debug.Log("Bullet: " + dir);
+      rngOffset = new Vector2(Random.Range(-rngXRange, rngXRange), Random.Range(-rngYRange, rngYRange));
+      moveDir = new Vector3(dir.x + rngOffset.x, dir.y + rngOffset.y, dir.z);
+      postMoveDir = new Vector3(dir.x + rngOffset.x, dir.y + rngOffset.y, dir.z + 1000f);
       ray = new Ray(transform.position, moveDir);
 
     }
