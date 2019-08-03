@@ -1,49 +1,132 @@
 fileFormatVersion: 2
 guid: fb046630f5104a049af539adc6e3c811
 ScriptedImporter:
-  fileIDToRecycleName:
-    2100000: Terran_Wall01
-    2100002: Terran_Wall01_1
-    2100004: Terran_Wall01_2
-    2100006: Terran_Wall01_3
-    2100008: Terran_Wall01_4
-    2800000: Terran_Wall01 - baseColor
-    2800002: Terran_Wall01 - normal
-    2800004: Terran_Wall01 - metallic
-    2800006: Terran_Wall01 - height
-    2800008: Terran_Wall01 - ambientOcclusion
-    2800010: Terran_Wall01 - emissive
-    2800012: Terran_Wall01_1 - baseColor
-    2800014: Terran_Wall01_1 - normal
-    2800016: Terran_Wall01_1 - metallic
-    2800018: Terran_Wall01_1 - height
-    2800020: Terran_Wall01_1 - ambientOcclusion
-    2800022: Terran_Wall01_1 - emissive
-    2800024: Terran_Wall01_2 - baseColor
-    2800026: Terran_Wall01_2 - normal
-    2800028: Terran_Wall01_2 - metallic
-    2800030: Terran_Wall01_2 - height
-    2800032: Terran_Wall01_2 - ambientOcclusion
-    2800034: Terran_Wall01_2 - emissive
-    2800036: Terran_Wall01_3 - baseColor
-    2800038: Terran_Wall01_3 - normal
-    2800040: Terran_Wall01_3 - metallic
-    2800042: Terran_Wall01_3 - height
-    2800044: Terran_Wall01_3 - ambientOcclusion
-    2800046: Terran_Wall01_3 - emissive
-    2800048: Terran_Wall01_4 - baseColor
-    2800050: Terran_Wall01_4 - normal
-    2800052: Terran_Wall01_4 - metallic
-    2800054: Terran_Wall01_4 - height
-    2800056: Terran_Wall01_4 - ambientOcclusion
-    2800058: Terran_Wall01_4 - emissive
-    11400000: sbsar
-    11400002: graph0
-    11400004: graph1
-    11400006: graph2
-    11400008: graph3
-    11400010: graph4
+  internalIDToNameTable:
+  - first:
+      21: 2100000
+    second: Terran_Wall01
+  - first:
+      21: 2100002
+    second: Terran_Wall01_1
+  - first:
+      21: 2100004
+    second: Terran_Wall01_2
+  - first:
+      21: 2100006
+    second: Terran_Wall01_3
+  - first:
+      21: 2100008
+    second: Terran_Wall01_4
+  - first:
+      28: 2800000
+    second: Terran_Wall01 - baseColor
+  - first:
+      28: 2800002
+    second: Terran_Wall01 - normal
+  - first:
+      28: 2800004
+    second: Terran_Wall01 - metallic
+  - first:
+      28: 2800006
+    second: Terran_Wall01 - height
+  - first:
+      28: 2800008
+    second: Terran_Wall01 - ambientOcclusion
+  - first:
+      28: 2800010
+    second: Terran_Wall01 - emissive
+  - first:
+      28: 2800012
+    second: Terran_Wall01_1 - baseColor
+  - first:
+      28: 2800014
+    second: Terran_Wall01_1 - normal
+  - first:
+      28: 2800016
+    second: Terran_Wall01_1 - metallic
+  - first:
+      28: 2800018
+    second: Terran_Wall01_1 - height
+  - first:
+      28: 2800020
+    second: Terran_Wall01_1 - ambientOcclusion
+  - first:
+      28: 2800022
+    second: Terran_Wall01_1 - emissive
+  - first:
+      28: 2800024
+    second: Terran_Wall01_2 - baseColor
+  - first:
+      28: 2800026
+    second: Terran_Wall01_2 - normal
+  - first:
+      28: 2800028
+    second: Terran_Wall01_2 - metallic
+  - first:
+      28: 2800030
+    second: Terran_Wall01_2 - height
+  - first:
+      28: 2800032
+    second: Terran_Wall01_2 - ambientOcclusion
+  - first:
+      28: 2800034
+    second: Terran_Wall01_2 - emissive
+  - first:
+      28: 2800036
+    second: Terran_Wall01_3 - baseColor
+  - first:
+      28: 2800038
+    second: Terran_Wall01_3 - normal
+  - first:
+      28: 2800040
+    second: Terran_Wall01_3 - metallic
+  - first:
+      28: 2800042
+    second: Terran_Wall01_3 - height
+  - first:
+      28: 2800044
+    second: Terran_Wall01_3 - ambientOcclusion
+  - first:
+      28: 2800046
+    second: Terran_Wall01_3 - emissive
+  - first:
+      28: 2800048
+    second: Terran_Wall01_4 - baseColor
+  - first:
+      28: 2800050
+    second: Terran_Wall01_4 - normal
+  - first:
+      28: 2800052
+    second: Terran_Wall01_4 - metallic
+  - first:
+      28: 2800054
+    second: Terran_Wall01_4 - height
+  - first:
+      28: 2800056
+    second: Terran_Wall01_4 - ambientOcclusion
+  - first:
+      28: 2800058
+    second: Terran_Wall01_4 - emissive
+  - first:
+      114: 11400000
+    second: sbsar
+  - first:
+      114: 11400002
+    second: graph0
+  - first:
+      114: 11400004
+    second: graph1
+  - first:
+      114: 11400006
+    second: graph2
+  - first:
+      114: 11400008
+    second: graph3
+  - first:
+      114: 11400010
+    second: graph4
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -144,13 +227,7 @@ ScriptedImporter:
       textureFormat: 2
       bGenerateOnLoad: 1
     material: {fileID: 2100000, guid: fb046630f5104a049af539adc6e3c811, type: 3}
-    generatedTextures:
-    - {fileID: 2800008, guid: fb046630f5104a049af539adc6e3c811, type: 3}
-    - {fileID: 2800000, guid: fb046630f5104a049af539adc6e3c811, type: 3}
-    - {fileID: 2800010, guid: fb046630f5104a049af539adc6e3c811, type: 3}
-    - {fileID: 2800006, guid: fb046630f5104a049af539adc6e3c811, type: 3}
-    - {fileID: 2800004, guid: fb046630f5104a049af539adc6e3c811, type: 3}
-    - {fileID: 2800002, guid: fb046630f5104a049af539adc6e3c811, type: 3}
+    generatedTextures: []
   - graphLabel: Terran_Wall01_1
     prototypeName: Terran_Wall01
     graphDescIndex: 0
@@ -175,23 +252,9 @@ ScriptedImporter:
       uid=\"2551273107\" type=\"0\" value=\"9.7\" />\n  <presetinput identifier=\"emissiveColor\"
       uid=\"2551284103\" type=\"3\" value=\"1,0.981307,0.495283,1\" />\n  <presetinput
       identifier=\"Glow_Amount\" uid=\"2551285431\" type=\"0\" value=\"1\" />\n </sbspreset>\n"
-    shaderName: Standard
+    shaderName: VacuumShaders/Curved World/U5 Standard/Standard
     outputNames: baseColor,normal,metallic,height,ambientOcclusion,emissive
-    texturePackingList:
-    - outputName: baseColor
-      alphaSource: baseColor
-    - outputName: normal
-      alphaSource: normal
-    - outputName: roughness
-      alphaSource: roughness
-    - outputName: metallic
-      alphaSource: smoothness
-    - outputName: height
-      alphaSource: height
-    - outputName: ambientOcclusion
-      alphaSource: ambientOcclusion
-    - outputName: emissive
-      alphaSource: emissive
+    texturePackingList: []
     textureParameters:
     - textureName: Terran_Wall01_1 - roughness
       wrapMode: 0
@@ -275,23 +338,9 @@ ScriptedImporter:
       />\n  <presetinput identifier=\"emissiveColor\" uid=\"2551284103\" type=\"3\"
       value=\"1,0.981307,0.495283,1\" />\n  <presetinput identifier=\"Glow_Amount\"
       uid=\"2551285431\" type=\"0\" value=\"1\" />\n </sbspreset>\n"
-    shaderName: Standard
+    shaderName: VacuumShaders/Curved World/U5 Standard/Standard
     outputNames: baseColor,normal,metallic,height,ambientOcclusion,emissive
-    texturePackingList:
-    - outputName: baseColor
-      alphaSource: baseColor
-    - outputName: normal
-      alphaSource: normal
-    - outputName: roughness
-      alphaSource: roughness
-    - outputName: metallic
-      alphaSource: smoothness
-    - outputName: height
-      alphaSource: height
-    - outputName: ambientOcclusion
-      alphaSource: ambientOcclusion
-    - outputName: emissive
-      alphaSource: emissive
+    texturePackingList: []
     textureParameters:
     - textureName: Terran_Wall01_2 - roughness
       wrapMode: 0
@@ -345,13 +394,7 @@ ScriptedImporter:
       textureFormat: 2
       bGenerateOnLoad: 1
     material: {fileID: 2100004, guid: fb046630f5104a049af539adc6e3c811, type: 3}
-    generatedTextures:
-    - {fileID: 2800032, guid: fb046630f5104a049af539adc6e3c811, type: 3}
-    - {fileID: 2800024, guid: fb046630f5104a049af539adc6e3c811, type: 3}
-    - {fileID: 2800034, guid: fb046630f5104a049af539adc6e3c811, type: 3}
-    - {fileID: 2800030, guid: fb046630f5104a049af539adc6e3c811, type: 3}
-    - {fileID: 2800028, guid: fb046630f5104a049af539adc6e3c811, type: 3}
-    - {fileID: 2800026, guid: fb046630f5104a049af539adc6e3c811, type: 3}
+    generatedTextures: []
   - graphLabel: Terran_Wall01_3
     prototypeName: Terran_Wall01
     graphDescIndex: 0
@@ -376,23 +419,9 @@ ScriptedImporter:
       uid=\"2551273107\" type=\"0\" value=\"9.7\" />\n  <presetinput identifier=\"emissiveColor\"
       uid=\"2551284103\" type=\"3\" value=\"1,0.981307,0.495283,1\" />\n  <presetinput
       identifier=\"Glow_Amount\" uid=\"2551285431\" type=\"0\" value=\"1\" />\n </sbspreset>\n"
-    shaderName: Standard
+    shaderName: VacuumShaders/Curved World/U5 Standard/Standard
     outputNames: baseColor,normal,metallic,height,ambientOcclusion,emissive
-    texturePackingList:
-    - outputName: baseColor
-      alphaSource: baseColor
-    - outputName: normal
-      alphaSource: normal
-    - outputName: roughness
-      alphaSource: roughness
-    - outputName: metallic
-      alphaSource: smoothness
-    - outputName: height
-      alphaSource: height
-    - outputName: ambientOcclusion
-      alphaSource: ambientOcclusion
-    - outputName: emissive
-      alphaSource: emissive
+    texturePackingList: []
     textureParameters:
     - textureName: Terran_Wall01_3 - roughness
       wrapMode: 0
@@ -446,13 +475,7 @@ ScriptedImporter:
       textureFormat: 2
       bGenerateOnLoad: 1
     material: {fileID: 2100006, guid: fb046630f5104a049af539adc6e3c811, type: 3}
-    generatedTextures:
-    - {fileID: 2800044, guid: fb046630f5104a049af539adc6e3c811, type: 3}
-    - {fileID: 2800036, guid: fb046630f5104a049af539adc6e3c811, type: 3}
-    - {fileID: 2800046, guid: fb046630f5104a049af539adc6e3c811, type: 3}
-    - {fileID: 2800042, guid: fb046630f5104a049af539adc6e3c811, type: 3}
-    - {fileID: 2800040, guid: fb046630f5104a049af539adc6e3c811, type: 3}
-    - {fileID: 2800038, guid: fb046630f5104a049af539adc6e3c811, type: 3}
+    generatedTextures: []
   - graphLabel: Terran_Wall01_4
     prototypeName: Terran_Wall01
     graphDescIndex: 0
@@ -483,23 +506,9 @@ ScriptedImporter:
       />\n  <presetinput identifier=\"emissiveColor\" uid=\"2551284103\" type=\"3\"
       value=\"0.636792,0.756535,1,1\" />\n  <presetinput identifier=\"Glow_Amount\"
       uid=\"2551285431\" type=\"0\" value=\"1\" />\n </sbspreset>\n"
-    shaderName: Standard
+    shaderName: VacuumShaders/Curved World/U5 Standard/Standard
     outputNames: baseColor,normal,metallic,height,ambientOcclusion,emissive
-    texturePackingList:
-    - outputName: baseColor
-      alphaSource: baseColor
-    - outputName: normal
-      alphaSource: normal
-    - outputName: roughness
-      alphaSource: roughness
-    - outputName: metallic
-      alphaSource: smoothness
-    - outputName: height
-      alphaSource: height
-    - outputName: ambientOcclusion
-      alphaSource: ambientOcclusion
-    - outputName: emissive
-      alphaSource: emissive
+    texturePackingList: []
     textureParameters:
     - textureName: Terran_Wall01_4 - roughness
       wrapMode: 0
@@ -553,10 +562,4 @@ ScriptedImporter:
       textureFormat: 2
       bGenerateOnLoad: 1
     material: {fileID: 2100008, guid: fb046630f5104a049af539adc6e3c811, type: 3}
-    generatedTextures:
-    - {fileID: 2800056, guid: fb046630f5104a049af539adc6e3c811, type: 3}
-    - {fileID: 2800048, guid: fb046630f5104a049af539adc6e3c811, type: 3}
-    - {fileID: 2800058, guid: fb046630f5104a049af539adc6e3c811, type: 3}
-    - {fileID: 2800054, guid: fb046630f5104a049af539adc6e3c811, type: 3}
-    - {fileID: 2800052, guid: fb046630f5104a049af539adc6e3c811, type: 3}
-    - {fileID: 2800050, guid: fb046630f5104a049af539adc6e3c811, type: 3}
+    generatedTextures: []
